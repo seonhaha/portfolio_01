@@ -501,8 +501,9 @@ body {
   }
 
   #business ul {
+    width: 80%;
+    overflow-x: auto;
     flex-wrap: nowrap;
-    white-space: nowrap;
   }
 
   #business ul li {
@@ -569,8 +570,8 @@ body {
 #vision .vision_icon li::before {
   content: "";
   display: block;
-  width: 200px;
-  height: 200px;
+  width: 150px;
+  height: 150px;
   margin-bottom: 20px;
   border-radius: 50%;
   background-color: rgba(43, 42, 76, 0.5);
@@ -608,6 +609,12 @@ body {
 
   #vision .vision_icon {
     flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+
+  #vision .vision_icon li {
+    width: calc((100% - 40px) / 2);
   }
 
   #vision .vision_icon li::before {
@@ -615,6 +622,7 @@ body {
     display: block;
     width: 130px;
     height: 130px;
+    margin: 0 auto;
     border-radius: 50%;
     background-color: rgba(43, 42, 76, 0.5);
     background-repeat: no-repeat;
